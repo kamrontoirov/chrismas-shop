@@ -1,7 +1,4 @@
 @media (max-width: 425px) {
-    * {
-        outline: 1px solid black;
-    }
     body:has(.mobile__nav) {
         overflow-y: hidden;
     }
