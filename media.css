@@ -599,11 +599,15 @@
         max-width: 1200px;
         margin: 0 auto;
     }
-    .box {
+    .mobile-box {
+        display: block;
         width: 260px;
         text-align: center;
-        margin-right: 100px;
+        margin-right: 500px;
         padding-top: 60px;
+    }
+    .box {
+        display: none;
     }
     .box-text {
         width: 280px;
@@ -635,9 +639,9 @@
         font-size: 10px;
         margin-right: 100px;
     }
-    .soat-container {
+    .mobile-soat {
+        display: block;
         width: 300px;
-        border: 1px solid black;
         margin-top: 8px;
         display: flex;
         justify-content: space-between;
@@ -647,6 +651,9 @@
         padding: 5px;
         padding-top: 8px;
         margin-right: 400px;
+    }
+    .soat-container {
+        display: none;
     }
     .wrapper5 {
         max-width: 1200px;
@@ -856,52 +863,52 @@
         line-height: 23px;
         margin-left: 15px;
     }
-}
-.all-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 300px);
-    margin-top: 30px;
-    margin-left: 50px;
-}
-.four_content {
-    display: flex;
-    width: 400px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 15px;
-    color: white;
-    margin-top: 20px;
-}
-.all {
-    width: 50px;
-    height: 50px;
-    font-family: monospace;
-    font-size: 12px;
-}
-.work {
-    width: 100px;
-    height: 50px;
-    font-family: monospace;
-    font-size: 12px;
-}
-.health {
-    width: 120px;
-    height: 50px;
-    font-family: monospace;
-    font-size: 12px;
-}
-.harmony {
-    width: 130px;
-    height: 50px;
-    font-family: monospace;
-    font-size: 12px;
-}
-.gift-text {
-    font-family: monospace;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 48px;
-    text-align: center;
-    color: white;
+    .all-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .four_content {
+        display: flex;
+        width: 400px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 15px;
+        color: white;
+        margin-top: 20px;
+    }
+    .all {
+        width: 50px;
+        height: 50px;
+        font-family: monospace;
+        font-size: 12px;
+    }
+    .work {
+        width: 100px;
+        height: 50px;
+        font-family: monospace;
+        font-size: 12px;
+    }
+    .health {
+        width: 120px;
+        height: 50px;
+        font-family: monospace;
+        font-size: 12px;
+    }
+    .harmony {
+        width: 130px;
+        height: 50px;
+        font-family: monospace;
+        font-size: 12px;
+    }
+    .gift-text {
+        font-family: monospace;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 48px;
+        text-align: center;
+        color: white;
+    }
 }

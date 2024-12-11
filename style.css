@@ -587,9 +587,11 @@ html {
     width: 426px;
     height: 428px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 480px;
     padding-top: 60px;
+}
+.mobile-box {
+    display: none;
 }
 .box-text {
     font-family: monospace;
@@ -644,7 +646,6 @@ html {
     height: 72px;
     margin-top: 8px;
     margin-right: 200px;
-    border: 1px solid black;
     width: fit-content;
     margin: 0 auto;
     margin-top: 8px;
@@ -655,6 +656,9 @@ html {
     border-radius: 20px;
     padding: 12px;
     padding-top: 8px;
+}
+.mobile-soat {
+    display: none;
 }
 .soat-content {
     width: 80px;
