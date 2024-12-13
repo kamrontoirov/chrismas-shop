@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid black;
 }
 html {
     scroll-behavior: smooth;
@@ -42,6 +43,7 @@ html {
 }
 
 .four-content {
+    margin-left: 730px;
     display: flex;
     gap: 15px;
 }
@@ -124,7 +126,7 @@ html {
     padding-bottom: 60px;
 }
 .gift-title {
-    width: 420px;
+    width: 400px;
     height: 144px;
     margin-left: auto;
     margin-right: auto;
@@ -411,4 +413,7 @@ html {
     letter-spacing: 0.05em;
     text-align: center;
     margin-left: 50px;
+}
+.header__list {
+    display: none;
 }
