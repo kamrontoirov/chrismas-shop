@@ -466,10 +466,6 @@
         transition: 0.2s;
         cursor: pointer;
     }
-    .cards1:hover {
-        scale: 1.05;
-        transition: 0.2s;
-    }
     .cards1-img {
         width: 270px;
         height: 215px;
@@ -479,10 +475,6 @@
         border-radius: 10px;
         transition: 0.2s;
         cursor: pointer;
-    }
-    .cards2:hover {
-        scale: 1.05;
-        transition: 0.2s;
     }
     .cards2-img {
         width: 270px;
@@ -494,10 +486,6 @@
         transition: 0.2s;
         cursor: pointer;
     }
-    .cards3:hover {
-        scale: 1.05;
-        transition: 0.2s;
-    }
     .cards3-img {
         width: 270px;
         height: 215px;
@@ -507,10 +495,6 @@
         border-radius: 10px;
         transition: 0.2s;
         cursor: pointer;
-    }
-    .cards4:hover {
-        scale: 1.05;
-        transition: 0.2s;
     }
     .cards4-img {
         width: 270px;
@@ -958,6 +942,6 @@
 @media (max-width: 393px) {
     .main-text2-div {
         margin-top: 12px;
-        margin-left: 40px;
+        margin-left: 0px;
     }
 }
