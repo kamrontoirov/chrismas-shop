@@ -1,7 +1,4 @@
 @media (max-width: 425px) {
-    body:has(.mobile__nav) {
-        overflow-y: hidden;
-    }
     .two-content {
         display: flex;
         gap: 10px;
@@ -203,7 +200,7 @@
         padding: 14px;
         border-radius: 18px;
         margin-top: 12px;
-        margin-left: 80px;
+        margin-left: 100px;
         cursor: pointer;
         transition: 0.2s;
     }
@@ -226,8 +223,7 @@
         line-height: 40px;
         margin-right: 12px;
     }
-    /* .main-button {
-    } */
+
     .main-text3 {
         font-size: 18px;
     }
@@ -639,7 +635,7 @@
         text-transform: uppercase;
         margin-right: 220px;
     }
-    .box-btn {
+    .main-button2 {
         margin-left: 20px;
         font-family: monospace;
         font-size: 15px;
@@ -657,7 +653,6 @@
         border-radius: 18px;
         cursor: pointer;
         transition: 0.2s;
-        text-decoration: none;
     }
     .main-button2:hover {
         background-color: white;
@@ -678,7 +673,7 @@
     }
     .mobile-soat {
         display: block;
-        width: 300px;
+        width: 280px;
         margin-top: 8px;
         display: flex;
         justify-content: space-between;
@@ -687,10 +682,24 @@
         border-radius: 20px;
         padding: 5px;
         padding-top: 8px;
-        margin-right: 400px;
+        margin-right: 0px;
     }
     .soat-container {
         display: none;
+        width: 340px;
+        height: 72px;
+        margin-top: 8px;
+        margin-right: 200px;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(232, 228, 228, 0.5);
+        border-radius: 20px;
+        padding: 12px;
+        padding-top: 8px;
     }
     .wrapper5 {
         max-width: 1200px;
@@ -856,9 +865,6 @@
         padding-left: 0px;
         padding-right: 0px;
     }
-    /* .wrapper4 {
-        max-width: 1200px;
-    } */
 
     .ftr-bottom-icons {
         margin-left: 160px;
@@ -947,5 +953,11 @@
         line-height: 48px;
         text-align: center;
         color: white;
+    }
+}
+@media (max-width: 393px) {
+    .main-text2-div {
+        margin-top: 12px;
+        margin-left: 40px;
     }
 }

@@ -661,6 +661,17 @@ html {
 }
 .mobile-soat {
     display: none;
+    display: block;
+    width: 300px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(232, 228, 228, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+    padding-top: 8px;
+    margin-right: 400px;
 }
 .soat-content {
     width: 80px;
