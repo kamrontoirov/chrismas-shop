@@ -21,29 +21,37 @@ function timer() {
 }
 
 setInterval(timer, 1000);
-const leftBtn = document.querySelector(".left-btn");
-const rightBtn = document.querySelector(".right-btn");
-const slider = document.querySelector(".slider");
-
-let currentPosition = 0; // Initial position
-const visibleAreaWidth = 400; // Width of one slide
-const slides = document.querySelectorAll(".slides");
-const totalSlides = slides.length; // Number of slides
-const totalWidth = totalSlides * visibleAreaWidth; // Total width of all slides
-const step = visibleAreaWidth; // Step (width of one slide)
-const maxPosition = totalWidth - visibleAreaWidth; // Maximum position
-
 function updateSliderPosition() {
-    slider.style.transition = "transform 0.3s ease"; // Smooth transition
-    slider.style.transform = `translateX(-${currentPosition}px)`; // Move the slider
+    const offset = -currentIndex * 100;
+    sliderRow.style.transform = `translateX(${offset}%)`;
 }
 
-leftBtn.addEventListener("click", () => {
-    currentPosition = Math.max(currentPosition - step, 0); // Decrease position, but not below 0
-    updateSliderPosition();
-});
+const slayderQator = document.querySelector(".slider__row");
+const slayderKartalar = document.querySelectorAll(".slider-card");
+const chapTugma = document.querySelector(".slider-btns .right");
+const ongTugma = document.querySelector(".slider-btns .left");
 
-rightBtn.addEventListener("click", () => {
-    currentPosition = Math.min(currentPosition + step, maxPosition); // Increase position, but not beyond max position
-    updateSliderPosition();
-});
+let holat = 0;
+
+function slayderniYurgizish(tomon) {
+    const korinadiganJoy = slayderQator.clientWidth;
+    const umumiyKenglik = Array.from(slayderKartalar).reduce(
+        (sum, karta) => sum + karta.clientWidth,
+        0
+    );
+    const qadam = korinadiganJoy / (window.innerWidth >= 100 ? 7 : 10);
+
+    holat = Math.min(
+        Math.max(holat + tomon * qadam, 0),
+        umumiyKenglik - korinadiganJoy
+    );
+    slayderQator.style.transform = `translateX(-${holat}px)`;
+
+    chapTugma.disabled = holat <= 0;
+    ongTugma.disabled = holat >= umumiyKenglik - korinadiganJoy;
+}
+
+chapTugma.addEventListener("click", () => slayderniYurgizish(-1));
+ongTugma.addEventListener("click", () => slayderniYurgizish(1));
+
+window.addEventListener("resize", () => slayderniYurgizish(0));

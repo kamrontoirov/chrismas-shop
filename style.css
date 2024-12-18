@@ -260,7 +260,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #ff4646;
-    padding: 60px 82px;
+    padding: 60px 0px;
 }
 .cards-text {
     color: white;
@@ -269,7 +269,7 @@ html {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.05em;
-    margin-left: 510px;
+    margin-left: 650px;
 }
 .cards-text2 {
     color: white;
@@ -280,80 +280,16 @@ html {
     letter-spacing: 0.16em;
     text-align: center;
     margin-top: 12px;
+    margin-left: 270px;
 }
 .slides {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-}
-.slides-title {
-    font-family: monospace;
-    font-size: 80px;
-    font-weight: 600;
-    line-height: 97px;
-    text-align: center;
-    color: white;
-}
-.live-img {
-    width: 200px;
-    height: 200px;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-.slides-title2 {
-    font-family: monospace;
-    font-size: 80px;
-    font-weight: 600;
-    line-height: 97px;
-    text-align: center;
-    color: white;
-    margin-left: 20px;
-}
-.create-img {
-    width: 200px;
-    height: 200px;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-.slides-title3 {
-    font-family: monospace;
-    font-size: 80px;
-    font-weight: 600;
-    line-height: 97px;
-    text-align: center;
-    color: white;
-    margin-left: 20px;
-}
-.love-img {
-    width: 200px;
-    height: 200px;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-.slides-title4 {
-    font-family: monospace;
-    font-size: 80px;
-    font-weight: 600;
-    line-height: 97px;
-    text-align: center;
-    color: white;
-    margin-left: 20px;
+    margin-left: 210px;
     overflow: hidden;
-}
-.dream-img {
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    margin-left: 20px;
-    border-radius: 10px;
 }
 
-.btn {
-    display: flex;
-    margin-left: 1020px;
-    gap: 20px;
-    margin-top: 20px;
-}
 .left {
     width: 56px;
     height: 56px;
@@ -930,23 +866,16 @@ html {
 .header__list {
     display: none;
 }
-.slider {
-    transition: transform 0.3s ease; /* Bu yerda silliq harakatlantirishni sozlash */
-}
-
-.slider_row {
+.slider__row {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
 }
-.card-slider {
+.slider-card {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-.slider-text {
-    color: white;
-    font-size: 40px;
+    transition: transform 0.3s ease-in-out;
 }
 .slider-img {
     height: 200px;
@@ -955,4 +884,19 @@ html {
 }
 .slider-img > img {
     height: 100%;
+}
+.slider-btns {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 850px;
+}
+.slider__body {
+    margin-left: 200px;
+    overflow: hidden;
+}
+.slider-text {
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
 }
